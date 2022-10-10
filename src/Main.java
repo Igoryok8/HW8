@@ -36,5 +36,38 @@ public class Main {
             population = populationGrowthRate+population;
             System.out.println("Год " + a + " ,численность населения составляет " + population + " человек");
         }
+        System.out.println("Домашнее задание 2");
+        System.out.println("Задание 1");
+        int deposit1 = 15000;
+        int month = 1;
+        for (;deposit1 <= 12_000_000; month++) {
+            deposit1 *= 1.07;
+            System.out.println("Месяц " + month + " ,сумма накоплений равна " + deposit1 + " рублей");
+        }
+        System.out.println("Задание 2");
+        int deposit2 = 15000;
+        int month1 = 1;
+        while (deposit2 <= 12_000_000) {
+            deposit2 *= 1.07;
+            if (month1 % 6 == 0) {
+                System.out.println("Месяц " + month1 + " ,сумма накоплений равна " + deposit2 + " рублей");
+            }
+            month1++;
+        }
+        System.out.println("Задание 3");
+        int deposit3 = 15000;
+        int depositMonth =1;
+        while (depositMonth <= 108) {
+            deposit3 *= 1.07;
+            if (depositMonth % 6 == 0) {
+                System.out.println("Месяц " + depositMonth + " ,сумма накоплений равна " + deposit3 + " рублей");
+            }
+            depositMonth++;
+        }
+        System.out.println("Задание 4");
+        int firstFriday =1;
+        for (int friday = firstFriday; friday<=31; friday = friday + 7 ) {
+            System.out.println("Сегодня пятница, " +friday+ "-е число. Необходимо подготовить отчет.");
+        }
     }
 }
