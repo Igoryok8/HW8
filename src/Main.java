@@ -10,11 +10,8 @@ public class Main {
         double sum = 0;
         while (sum <= 2_459_000) {
             sum = (sum + deposit) * (1 + monthPercent);
-            //  System.out.println("Месяц " + i + " ,сумма накоплений равна " + sum + " рублей");
             System.out.println(sum);
         }
-        //System.out.println(sum);
-        //System.out.println(i);
         System.out.println("Задание 2");
         int i = 0;
         while (i < 10) {
@@ -68,6 +65,23 @@ public class Main {
         int firstFriday =1;
         for (int friday = firstFriday; friday<=31; friday = friday + 7 ) {
             System.out.println("Сегодня пятница, " +friday+ "-е число. Необходимо подготовить отчет.");
+        }
+        System.out.println("Домашнее задание 3");
+        System.out.println("Задание 1");
+        int currentYear =2022;
+        int beginning = currentYear - 200;
+        int ending = currentYear + 100;
+        for (int c=beginning; c<ending; ++c) {
+            if (c % 79 == 0) {
+                System.out.println(c);
+            }
+        }
+        System.out.println("Задание 2");
+        int a =2;
+        int g = 0;
+        for (int d=1; d<=10; ++d) {
+            g = a * d;
+            System.out.println(a + " * " + d + " = " + g);
         }
     }
 }
